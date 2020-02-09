@@ -2101,3 +2101,8 @@ figure figcaption {
 .background-hero2 {
      background-image: url(../images/hero_2.jpg);
 }
+
+/*Ajuste Top Primer bloque*/
+.fix_first_block {
+   top:100px;
+}
