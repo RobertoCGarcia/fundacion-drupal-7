@@ -71,6 +71,7 @@
  *
  * @ingroup themeable
  */
+$path = drupal_get_path_alias();
 ?>
 <!--
 <div id="overlayer"></div>
@@ -98,7 +99,7 @@
       <div class="row align-items-center">
         <div class="col-6 col-xl-2">
           <h1 class="mb-0 site-logo">
-            <a href="index.html" class="h2 mb-0">Fundación GEER<span class="text-primary">.</span> </a>
+            <a href="<?php l('front','',array('absolute'=>true)); ?>" class="h2 mb-0">Fundación GEER<span class="text-primary">.</span> </a>
           </h1>
         </div>
         <div class="col-12 col-md-10 d-none d-xl-block">
@@ -136,67 +137,8 @@
       </div>
     </div>
   </header>
-<!--
-  <div class="site-blocks-cover overlay" style="background-image: url(sites/all/themes/finances/images/hero_2.jpg);" data-aos="fade" id="home-section">
 
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-10 mt-lg-5 text-center">
-          <div class="single-text owl-carousel">
-
-            <div class="slide">
-              <h1 class="text-uppercase" data-aos="fade-up">LOREM IPSIMASA SAKWEKA</h1>
-              <p class="mb-5 desc"  data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima delectus accusamus accusantium deleniti libero excepturi porro illo.</p>
-              <div data-aos="fade-up" data-aos-delay="100">
-                <a href="#" target="_blank" class="btn  btn-primary mr-2 mb-2">Get In Touch</a>
-              </div>
-            </div>
-
-            <div class="slide">
-              <h1 class="text-uppercase" data-aos="fade-up">Financing Solutions</h1>
-              <p class="mb-5 desc" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae minima delectus accusamus accusantium deleniti libero excepturi porro illo.</p>
-              <div data-aos="fade-up" data-aos-delay="100">
-                <a href="#" target="_blank" class="btn  btn-primary mr-2 mb-2">Get In Touch</a>
-              </div>
-            </div>
-
-            <div class="slide">
-              <h1 class="text-uppercase" data-aos="fade-up">Savings Accounts</h1>
-              <p class="mb-5 desc" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae minima delectus accusamus accusantium deleniti libero excepturi porro illo.</p>
-              <div data-aos="fade-up" data-aos-delay="100">
-                <a href="#" target="_blank" class="btn  btn-primary mr-2 mb-2">Get In Touch</a>
-              </div>
-            </div>
-
-
-            <div class="slide">
-              <h1 class="text-uppercase" data-aos="fade-up">XCCCC UYUYUYU UIUIOUIOU SSSWWS</h1>
-              <p class="mb-5 desc"  data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima delectus accusamus accusantium deleniti libero excepturi porro illo.</p>
-              <div data-aos="fade-up" data-aos-delay="100">
-                <a href="#" target="_blank" class="btn  btn-primary mr-2 mb-2">Cdsfw Hddfs Ysdds Jsdsd</a>
-              </div>
-            </div>
-
-
-          </div>
-
-
-        </div>
-
-      </div>
-    </div>
-
-    <a href="#next" class="mouse smoothscroll">
-      <span class="mouse-icon">
-        <span class="mouse-wheel"></span>
-      </span>
-    </a>
-  </div>
--->
-
-<?php print render($page['content']); ?>
+  <?php print render($page['content']); ?>
 
   <footer class="site-footer">
     <div class="container">
