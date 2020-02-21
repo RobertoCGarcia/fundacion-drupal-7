@@ -2,7 +2,7 @@ name = Finances
 description = Finances
 version = VERSION
 core = 7.x
-screenshot = /images/screenshot.png
+screenshot = /images/we-help.jpg
 
 
 stylesheets[all][] = css/bootstrap.min.css
