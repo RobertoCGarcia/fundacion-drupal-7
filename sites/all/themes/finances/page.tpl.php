@@ -84,6 +84,7 @@ $path = drupal_get_path_alias();
 
 <div class="site-wrap">
 
+<!--
   <div class="site-mobile-menu site-navbar-target">
     <div class="site-mobile-menu-header">
       <div class="site-mobile-menu-close mt-3">
@@ -92,14 +93,15 @@ $path = drupal_get_path_alias();
     </div>
     <div class="site-mobile-menu-body"></div>
   </div>
+-->
 
-
+<!--
   <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-6 col-xl-2">
           <h1 class="mb-0 site-logo">
-            <a href="<?php l('front','',array('absolute'=>true)); ?>" class="h2 mb-0">Fundación GEER<span class="text-primary">.</span> </a>
+            <a href="<?php //l('front','',array('absolute'=>true)); ?>" class="h2 mb-0">Fundación GEER<span class="text-primary">.</span> </a>
           </h1>
         </div>
         <div class="col-12 col-md-10 d-none d-xl-block">
@@ -137,6 +139,93 @@ $path = drupal_get_path_alias();
       </div>
     </div>
   </header>
+-->
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+          <img src="http://placehold.it/150x50?text=Logo" alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca de</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">First Slide</h2>
+          <p class="lead">This is a description for the first slide.</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Second Slide</h2>
+          <p class="lead">This is a description for the second slide.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Third Slide</h2>
+          <p class="lead">This is a description for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
+</header>
+
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="display-4">Full Page Image Slider</h1>
+    <p class="lead">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper ac diam sit amet sodales. Etiam eget dictum ipsum. In tristique accumsan rutrum. Pellentesque nisi urna, euismod non aliquet vitae, tincidunt vitae ligula. Proin dictum, est in pharetra congue, turpis nibh elementum nisi, ut convallis odio risus ac libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer fringilla orci sit amet blandit aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a mi est. Nam purus mauris, facilisis vel mauris sed, pulvinar pellentesque nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat.
+
+    </p>
+  </div>
+</section>
+
+
+
 
   <?php print render($page['content']); ?>
 
@@ -181,7 +270,7 @@ $path = drupal_get_path_alias();
           </form>
         </div>
       </div>
-      
+
       <div class="row pt-5 mt-5 text-center">
         <div class="col-md-12">
           <div class="border-top pt-5">

@@ -2106,3 +2106,14 @@ figure figcaption {
 .fix_first_block {
    top:100px;
 }
+
+/*27/02/2020 Ajuste Slider Home*/
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
