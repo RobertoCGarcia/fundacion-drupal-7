@@ -140,14 +140,16 @@ $path = drupal_get_path_alias();
     </div>
   </header>
 -->
-
+<?php global $base_url; $arg0 = arg(0); $arg1 = arg(1); $arg2 = arg(2); $arg3 = arg(3); $path = drupal_get_path_alias($_GET['q']);#dpm($classes_array);?>
 <!-- Navigation -->
 <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> -->
 <nav class="<?php print $class_navbar_menu; ?>">
 
   <div class="container">
     <a class="navbar-brand" href="#">
-          <img src="http://placehold.it/150x50?text=Logo" alt="">
+          <a href="<?php print $base_url; ?>">
+             <img src="http://placehold.it/150x50?text=Logo" alt="" border="0">
+          </a>
         </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -159,75 +161,41 @@ $path = drupal_get_path_alias();
                 <span class="sr-only">(current)</span>
               </a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="#">Acerca de</a>
+          <a class="nav-link" href="/actividades">Actividades</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Proyectos</a>
+          <a class="nav-link" href="/conocenos">Conocenos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" href="/patrocinadores">Patrocinadores</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/directorio">Directorio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contacto">Contacto</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/acerca-de">Acerca de</a>
+        </li>
+
       </ul>
     </div>
   </div>
 </nav>
+<?php
 
-
-<header>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">First Slide</h2>
-          <p class="lead">This is a description for the first slide.</p>
-        </div>
-      </div>
-      <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Second Slide</h2>
-          <p class="lead">This is a description for the second slide.</p>
-        </div>
-      </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Third Slide</h2>
-          <p class="lead">This is a description for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-  </div>
-</header>
-
-<!-- Page Content -->
-<section class="py-5">
-  <div class="container">
-    <h1 class="display-4">Full Page Image Slider</h1>
-    <p class="lead">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper ac diam sit amet sodales. Etiam eget dictum ipsum. In tristique accumsan rutrum. Pellentesque nisi urna, euismod non aliquet vitae, tincidunt vitae ligula. Proin dictum, est in pharetra congue, turpis nibh elementum nisi, ut convallis odio risus ac libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer fringilla orci sit amet blandit aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a mi est. Nam purus mauris, facilisis vel mauris sed, pulvinar pellentesque nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat.
-
-    </p>
-  </div>
-</section>
-
-
-
+print "base_url: " . $base_url . "<br>";
+print "arg0: " .$arg0. "<br>";
+print "arg1: " .$arg1. "<br>";
+print "arg2: " .$arg2. "<br>";
+print "arg3: " .$arg3. "<br>";
+print "path: " .$path. "<br>";
+?>
 
   <?php print render($page['content']); ?>
 
