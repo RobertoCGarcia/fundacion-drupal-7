@@ -51,6 +51,10 @@ function finances_preprocess(&$variables, $hook){
     }
 }
 
+/*
+Eliminar atributos width y height de las imagenes que se cargan
+dentro del tema
+*/
 function finances_preprocess_image(&$variables){
   $attributes = &$variables['attributes'];
 
@@ -79,6 +83,16 @@ function finances_preprocess_page(&$variables) {
   //dpm($variables);
   //dpm($hook);
   //print_r($hook);
+  //
+  if( user_is_logged_in() ){
+     //Si el usuario esta logueado se cambia el menu de fix-top a default
+     $variables['class_navbar_menu'] = "navbar navbar-expand-lg navbar-dark bg-dark";
+  }else{
+     //Se dejan las clases iniciales
+     $variables['class_navbar_menu'] = "navbar navbar-expand-lg navbar-dark bg-dark fixed-top";
+  }
+
+
   $path = drupal_get_path_alias($_GET['q']);
   $aliases = explode('/', $path);
   $arg0 = arg(0); $arg1 = arg(1); $arg2 = arg(2); $arg3 = arg(3);

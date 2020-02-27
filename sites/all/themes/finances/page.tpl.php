@@ -142,7 +142,9 @@ $path = drupal_get_path_alias();
 -->
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> -->
+<nav class="<?php print $class_navbar_menu; ?>">
+
   <div class="container">
     <a class="navbar-brand" href="#">
           <img src="http://placehold.it/150x50?text=Logo" alt="">
