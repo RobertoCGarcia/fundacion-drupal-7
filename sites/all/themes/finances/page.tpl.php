@@ -157,7 +157,7 @@ $path = drupal_get_path_alias();
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home
+          <a class="nav-link" href="<?php print $base_url; ?>">Home
                 <span class="sr-only">(current)</span>
               </a>
         </li>
@@ -211,20 +211,21 @@ print "path: " .$path. "<br>";
             <div class="col-md-3 ml-auto">
               <h2 class="footer-heading mb-4">Links Rápidos</h2>
               <ul class="list-unstyled">
-                <li><a href="#about-section" class="smoothscroll">Terminos</a></li>
-                <li><a href="#about-section" class="smoothscroll">Política de Privacidad</a></li>
-                <li><a href="#about-section" class="smoothscroll">Acerca de Nosotros</a></li>
-                <li><a href="#services-section" class="smoothscroll">Servicios</a></li>
-                <li><a href="#testimonials-section" class="smoothscroll">Testimonios</a></li>
-                <li><a href="#contact-section" class="smoothscroll">Contactanos</a></li>
+                <li><a href="/terminos" class="smoothscroll">Terminos</a></li>
+                <li><a href="/politica-de-privacidad" class="smoothscroll">Política de Privacidad</a></li>
+                <li><a href="/acerca-de" class="smoothscroll">Acerca de</a></li>
+                <li><a href="/servicios" class="smoothscroll">Servicios</a></li>
+                <li><a href="/testimonios" class="smoothscroll">Testimonios</a></li>
+                <li><a href="/contacto" class="smoothscroll">Contacto</a></li>
+                <li><a href="/blog" class="smoothscroll">Blog</a></li>
               </ul>
             </div>
             <div class="col-md-3 footer-social">
               <h2 class="footer-heading mb-4">Síguenos en Redes Sociales</h2>
-              <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+              <a href="https://www.facebook.com/" target="_blank" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+              <a href="https://twitter.com/" target="_blank" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+              <a href="https://www.instagram.com/" target="_blank" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+              <a href="https://www.linkedin.com/" target="_blank" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
             </div>
           </div>
         </div>
