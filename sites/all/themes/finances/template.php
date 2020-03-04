@@ -215,3 +215,53 @@ function finances_css_alter(&$css) {
 
 
 }
+
+/*
+* Override Login Form
+* https://www.drupal.org/docs/7/theming/overriding-themable-output/customizing-and-overriding-user-login-page-register-and
+*/
+function finances_theme() {
+
+  $items = array();
+
+  $items['user_login'] = array(
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'finances') . '/templates',
+    'template' => 'user-login',
+    'preprocess functions' => array(
+       'finances_preprocess_user_login'
+    ),
+  );
+  $items['user_register_form'] = array(
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'finances') . '/templates',
+    'template' => 'user-register-form',
+    'preprocess functions' => array(
+      'finances_preprocess_user_register_form'
+    ),
+  );
+  $items['user_pass'] = array(
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'finances') . '/templates',
+    'template' => 'user-pass',
+    'preprocess functions' => array(
+      'finances_preprocess_user_pass'
+    ),
+  );
+  return $items;
+}
+
+
+function finances_preprocess_user_login(&$vars) {
+  $vars['intro_text'] = t('This is my awesome login form');
+}
+
+
+function finances_preprocess_user_register_form(&$vars) {
+  $vars['intro_text'] = t('This is my super awesome reg form');
+}
+
+
+function finances_preprocess_user_pass(&$vars) {
+  $vars['intro_text'] = t('This is my super awesome request new password form');
+}

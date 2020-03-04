@@ -1,5 +1,5 @@
-name = Finances
-description = Finances
+name = Finances & Charity
+description = Finances & Charity for ONG Websites
 version = VERSION
 core = 7.x
 screenshot = /images/we-help.jpg
