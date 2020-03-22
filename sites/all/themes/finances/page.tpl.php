@@ -148,9 +148,8 @@ $path = drupal_get_path_alias();
   <div class="container">
     <a class="navbar-brand" href="#">
           <a href="<?php print $base_url; ?>">
-             <img src="http://placehold.it/150x50?text=Logo" alt="" border="0">
+             <img src="https://placehold.it/150x50?text=Logo" alt="" border="0">
           </a>
-        </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -187,19 +186,10 @@ $path = drupal_get_path_alias();
     </div>
   </div>
 </nav>
-<?php
 
-print "base_url: " . $base_url . "<br>";
-print "arg0: " .$arg0. "<br>";
-print "arg1: " .$arg1. "<br>";
-print "arg2: " .$arg2. "<br>";
-print "arg3: " .$arg3. "<br>";
-print "path: " .$path. "<br>";
-?>
+<?php print render($page['content']); ?>
 
-  <?php print render($page['content']); ?>
-
-  <footer class="site-footer">
+<footer class="site-footer">
     <div class="container">
       <div class="row">
         <div class="col-md-9">
@@ -253,19 +243,30 @@ print "path: " .$path. "<br>";
 
       </div>
     </div>
-  </footer>
+</footer>
 
 </div> <!-- .site-wrap -->
 
-<script src="/sites/all/themes/finances/js/jquery-3.3.1.min.js"></script>
-<script src="/sites/all/themes/finances/js/jquery-ui.js"></script>
-<script src="/sites/all/themes/finances/js/popper.min.js"></script>
-<script src="/sites/all/themes/finances/js/bootstrap.min.js"></script>
-<script src="/sites/all/themes/finances/js/owl.carousel.min.js"></script>
-<script src="/sites/all/themes/finances/js/jquery.countdown.min.js"></script>
-<script src="/sites/all/themes/finances/js/jquery.easing.1.3.js"></script>
-<script src="/sites/all/themes/finances/js/aos.js"></script>
-<script src="/sites/all/themes/finances/js/jquery.fancybox.min.js"></script>
-<script src="/sites/all/themes/finances/js/jquery.sticky.js"></script>
-<script src="/sites/all/themes/finances/js/isotope.pkgd.min.js"></script>
-<script src="/sites/all/themes/finances/js/main.js"></script>
+
+<?php
+
+print "base_url: " . $base_url . "<br>";
+print "arg0: " .$arg0. "<br>";
+print "arg1: " .$arg1. "<br>";
+print "arg2: " .$arg2. "<br>";
+print "arg3: " .$arg3. "<br>";
+print "path: " .$path. "<br>";
+?>
+
+<!-- <script src="/<?php //print $base_url; ?>/sites/all/themes/finances/js/jquery-3.3.1.min.js"></script> -->
+<!-- <script src="/<?php //print $base_url; ?>/sites/all/themes/finances/js/jquery-ui.js"></script> -->
+<!-- <script src="/<?php //print $base_url; ?>/sites/all/themes/finances/js/popper.min.js"></script> -->
+<!-- <script src="/<?php //print $base_url; ?>/sites/all/themes/finances/js/bootstrap.min.js"></script>  -->
+<!-- <script src="/<?php //print $base_url; ?>/sites/all/themes/finances/js/owl.carousel.min.js"></script> -->
+<!-- <script src="/<?php //print $base_url; ?>/sites/all/themes/finances/js/jquery.countdown.min.js"></script> -->
+<!-- <script src="/<?php //print $base_url; ?>/sites/all/themes/finances/js/jquery.easing.1.3.js"></script> -->
+<!-- <script src="/<?php //print $base_url; ?>/sites/all/themes/finances/js/aos.js"></script> -->
+<!-- <script src="/<?php //print $base_url; ?>/sites/all/themes/finances/js/jquery.fancybox.min.js"></script> -->
+<!-- <script src="/<?php //print $base_url; ?>/sites/all/themes/finances/js/jquery.sticky.js"></script> -->
+<!-- <script src="/<?php //print $base_url; ?>/sites/all/themes/finances/js/isotope.pkgd.min.js"></script> -->
+<!-- <script src="/<?php //print $base_url; ?>/sites/all/themes/finances/js/main.js"></script> -->

@@ -38,6 +38,118 @@ function finances_preprocess_html(&$variables) {
   //drupal_add_js(drupal_get_path('theme', 'finances'). '/js/slick.min.js', $options);
   //drupal_add_js(drupal_get_path('theme', 'finances'). '/js/typed.js', $options);
 
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/aos.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  //'scope' => 'footer',
+  'scope' => 'header',
+));
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/bootstrap-datepicker.min.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/bootstrap.min.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/isotope.pkgd.min.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/jquery-ui.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/jquery.countdown.min.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/jquery.easing.1.3.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/jquery.fancybox.min.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/jquery.magnific-popup.min.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/jquery.stellar.min.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/jquery.sticky.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/mediaelement-and-player.min.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/popper.min.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/slick.min.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+drupal_add_js(drupal_get_path('theme', 'finances') . '/js/typed.js', array(
+  'type' => 'file',
+  'group' => JS_THEME,
+  'scope' => 'header',
+));
+
+
+
+
 }
 
 
